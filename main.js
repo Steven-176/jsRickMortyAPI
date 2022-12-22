@@ -7,16 +7,15 @@ const rootElement = document.querySelector('#app')
 
 const tabManager = new TabManager(rootElement, {
   page1: {
-    component: ListOfUser,
-    params: [1, 'hello']
+    component: ListOfEpisode,
+    params: ['https://rickandmortyapi.com/api/episode']
   },
   page2: {
     component: ListOfPost,
     params: ['https://jsonplaceholder.typicode.com/posts']
   },
   page3: {
-    component: ListOfEpisode,
-    params: ['https://rickandmortyapi.com/api/episode']
+    component: ListOfUser,
   }
 })
 
