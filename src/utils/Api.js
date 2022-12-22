@@ -1,9 +1,9 @@
 
-export const getCharacterFromApi = async () => {
-  const req = await fetch('https://rickandmortyapi.com/api/character')
+export const getUserFromApi = async () => {
+  const req = await fetch('https://reqres.in/api/users')
   const res = await req.json()
 
-  return res.results
+  return res.data
 }
 
 export const getPostFromApi = async () => {
