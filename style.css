@@ -101,6 +101,15 @@ table {
   }
 } */
 
-#app {
-  display: inline-block;
+#app div {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+}
+
+.characterCard {
+  padding: 15px;
+}
+.characterCard h2 {
+  width: 300px;
 }

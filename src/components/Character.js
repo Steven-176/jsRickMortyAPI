@@ -3,6 +3,7 @@ import createElement from "../utils/createElement";
 const Character = ({ textName = 'Denis', src, tagName = 'div' } = {}) => createElement(
   {
     tagName,
+    classList: ['characterCard'],
     children: [
       {
         tagName: 'table',
