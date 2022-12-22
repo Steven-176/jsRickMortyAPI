@@ -1,13 +1,27 @@
 import createElement from "../utils/createElement";
 
-const Episode = ({ text = 'Bonjour', src, tagName = 'div' } = {}) => createElement(
+const Episode = ({ textTitle = 'Bonjour', textDate = 'Inconnu', tagName = 'div' } = {}) => createElement(
   {
     tagName,
     children: [
       {
-        tagName: 'h2',
-        text,
-      }
+        tagName: 'table',
+        children: [
+          {
+            tagName: 'tr',
+            children: [
+              {
+                tagName: 'h2',
+                text: textTitle
+              }
+            ]
+          },
+          {
+            tagName: 'tr',
+            text: textDate
+          }
+        ]
+      },
     ]
   }
 )
