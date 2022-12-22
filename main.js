@@ -16,7 +16,7 @@ const tabManager = new TabManager(rootElement, {
   },
   page3: {
     component: ListOfEpisode,
-    params: ['https://rickandmortyapi.com/api/episode']
+    params: []
   }
 })
 
