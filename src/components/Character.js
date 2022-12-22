@@ -1,6 +1,6 @@
 import createElement from "../utils/createElement";
 
-const Episode = ({ textTitle = 'Bonjour', textDate = 'Inconnu', textCharacters = 'Inconnu', tagName = 'div' } = {}) => createElement(
+const Character = ({ textName = 'Denis', src, tagName = 'div' } = {}) => createElement(
   {
     tagName,
     children: [
@@ -12,17 +12,21 @@ const Episode = ({ textTitle = 'Bonjour', textDate = 'Inconnu', textCharacters =
             children: [
               {
                 tagName: 'h2',
-                text: textTitle
+                text: textName
               }
             ]
           },
           {
             tagName: 'tr',
-            text: textDate
-          },
-          {
-            tagName: 'tr',
-            text: textCharacters
+            children: [
+              {
+                tagName: 'img',
+                attributes: {
+                  src: src || 'https://via.placeholder.com/150'
+                }
+              }
+            ]
+            
           }
         ]
       },
@@ -30,4 +34,4 @@ const Episode = ({ textTitle = 'Bonjour', textDate = 'Inconnu', textCharacters =
   }
 )
 
-export default Episode
+export default Character

@@ -1,12 +1,12 @@
-import ListOfEpisode from './src/pages/ListOfEpisode'
+import ListOfCharacter from './src/pages/ListOfCharacter'
 import TabManager from './src/utils/TabManager'
 
 const rootElement = document.querySelector('#app')
 
 const tabManager = new TabManager(rootElement, {
   page1: {
-    component: ListOfEpisode,
-    params: ['https://rickandmortyapi.com/api/episode']
+    component: ListOfCharacter,
+    params: []
   }
 })
 
