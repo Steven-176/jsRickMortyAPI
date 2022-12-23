@@ -108,7 +108,7 @@ table {
 }
 
 .characterCard {
-  padding: 15px;
+  margin: 15px;
 }
 .characterCard h2 {
   width: 300px;

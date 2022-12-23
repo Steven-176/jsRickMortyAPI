@@ -23,16 +23,7 @@ document.querySelectorAll('[data-tabId]').forEach(element => {
     // console.log(searchElement.value)
     tabManager.openTabById(element.getAttribute('data-tabId'), searchElement.value)
   })
-
-  // character.addEventListener('click', () => {
-  //   // console.log(searchElement.value)
-  //   tabManager.openTabById(element.getAttribute('data-tabId'))
-  // })
-
 })
 
-tabManager.openTabById('page1').then(function() {
-  // const divCharacter = document.querySelector('.characterCard')
-  // console.log(divCharacter)
-})
+tabManager.openTabById('page1')
 
