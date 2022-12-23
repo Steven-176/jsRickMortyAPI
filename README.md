@@ -5,19 +5,9 @@
     - Steven Sivakaran
     - Walid Chiakh
 
-## Le projet
-
-L'application créée est une SPA (Single Page Application), permettant de récupérer et d'afficher à partir d'une API, une page listant des personnages. 
-
-
-
-Lien API: https://rickandmortyapi.com
-
-Lien Vercel: https://js-rick-morty-api.vercel.app/
-
 ## Installation 
 
-### 1) Installation de pnpm
+#### 1) Installation de pnpm
 - Télécharger pnpm et node
     - pnpm :
         ```sh
@@ -39,12 +29,29 @@ cd jsRickMortyAPI
 
 #### 3) Installation des dépendances
 
+Cette commande permettra l'installation des dépendances pnpm :
+
 ```sh
 pnpm install 
 ```
-### Lancer le serveur 
+#### 4) Lancer le serveur 
 
 Pour que le site soit fonctionnelle, il suffit de taper cette commande afin de lancer le serveur
 ```sh
 pnpm dev
 ```
+
+Ensuite, il suffit de copier le lien "Local" et de le coller dans la barre de recherche du navigateur. En général, le lien est http://localhost:5173
+
+## Le projet
+
+L'application créée est une SPA (Single Page Application), permettant de récupérer et d'afficher à partir d'une API, une page listant des personnages. 
+
+Lien API: https://rickandmortyapi.com
+
+Lien Vercel: https://js-rick-morty-api.vercel.app/
+
+- Le projet contient :
+    - Une page qui affiche les personnages de Rick & Morty 
+    - Une barre de recherche qui filtre les noms des personnages et les affiche 
+    - Les détails d'un personnage accessible en cliquant sur le titre du personnage 
