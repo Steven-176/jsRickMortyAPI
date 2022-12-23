@@ -13,6 +13,7 @@ const Character = ({ textName = 'Denis', src,  characterId = '', characterDetail
             children: [
               {
                 tagName: 'a',
+                classList: ['characterLinks'],
                 attributes: {
                   id: characterId,
                   href: characterDetails,
@@ -46,11 +47,3 @@ const Character = ({ textName = 'Denis', src,  characterId = '', characterDetail
 
 export default Character
 
-{
-  tagName: 'p'
-  text: 'ddef'
-  classList: ''
-  attributes: {
-    required: ''
-  }
-}

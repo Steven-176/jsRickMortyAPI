@@ -14,8 +14,24 @@ const ListOfCharacter = async (searchCharacter, Param) => {
       characterId: `character${element.id}`
     }))
 
-    // console.log(data)
-    return ListCharacter(data)
+    // const divCharacter = document.querySelector('.characterCard')
+    // console.log(divCharacter)
+
+    console.log(data[0].characterId)
+
+    const element = ListCharacter(data)
+
+    const characterCard = element.querySelector('div')
+
+    characterCard.addEventListener('click', function(e) {
+      
+      if (e.target.classList.contains('characterCard')) {
+        console.log(e.target)
+      }
+
+    })
+
+    return element
 
   } else {
     return Error;
