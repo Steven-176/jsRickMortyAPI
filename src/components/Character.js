@@ -1,6 +1,6 @@
 import createElement from "../utils/createElement";
 
-const Character = ({ textName = 'Denis', src,  characterId = '', characterDetails = '#', tagName = 'div' } = {}) => createElement(
+const Character = ({ textName = 'Not Found', src,  characterId = 'NotFound', characterDetails = 'Not Found', tagName = 'div' } = {}) => createElement(
   {
     tagName,
     classList: ['characterCard'],
@@ -12,18 +12,12 @@ const Character = ({ textName = 'Denis', src,  characterId = '', characterDetail
             tagName: 'tr',
             children: [
               {
-                tagName: 'a',
+                tagName: 'h2',
                 classList: ['characterLinks'],
+                text: textName,
                 attributes: {
                   id: characterId,
-                  href: characterDetails,
                 },
-                children: [
-                  {
-                    tagName: 'h2',
-                    text: textName
-                  }
-                ]
               }
             ]
           },
