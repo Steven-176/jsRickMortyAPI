@@ -17,6 +17,7 @@ document.querySelectorAll('[data-tabId]').forEach(element => {
 
   element.addEventListener('click', () => {
     document.querySelector('.form-inline').setAttribute('style', 'display:inline-block');
+    document.querySelector('#searchCharacter').value = '';
     tabManager.openTabById(element.getAttribute('data-tabId'))
   })
 
