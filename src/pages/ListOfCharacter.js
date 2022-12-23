@@ -1,13 +1,16 @@
 import ListCharacter from "../components/ListCharacter"
 import SingleCharacterModal from "../components/SingleCharacterModal"
-import { getCharacterFromApi } from "../utils/Api"
+import Api from "../utils/Api"
 
 const ListOfCharacter = async (searchCharacter, Param) => {
   
   if (searchCharacter) {
     searchCharacter = `?name=${searchCharacter}`
   }
-  const res = await getCharacterFromApi(searchCharacter)
+
+  const rmApi = new Api(`https://rickandmortyapi.com/api/character/`)
+
+  const res = await rmApi.getApi(searchCharacter)
 
   if (res) {
     const data = res.map((element) => ({
@@ -15,11 +18,6 @@ const ListOfCharacter = async (searchCharacter, Param) => {
       src: element.image,
       characterId: `character${element.id}`
     }))
-
-    // const divCharacter = document.querySelector('.characterCard')
-    // console.log(divCharacter)
-
-    // console.log(data[0].characterId)
 
     const element = ListCharacter(data)
 
@@ -32,8 +30,7 @@ const ListOfCharacter = async (searchCharacter, Param) => {
       characterCard.addEventListener('click', async function(e) {
         const app = document.querySelector('#app')
         app.innerHTML = ''
-        const singleRes = await getCharacterFromApi(e.target.id.slice(9))
-        // console.log(singleData)
+        const singleRes = await rmApi.getApi(e.target.id.slice(9))
         app.appendChild(SingleCharacterModal(singleRes))
       })
     })

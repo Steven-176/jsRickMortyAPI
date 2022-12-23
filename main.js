@@ -26,4 +26,3 @@ document.querySelectorAll('[data-tabId]').forEach(element => {
 })
 
 tabManager.openTabById('page1')
-
