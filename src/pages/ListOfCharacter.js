@@ -1,4 +1,5 @@
 import ListCharacter from "../components/ListCharacter"
+import NotFound from "../components/NotFound"
 import SingleCharacterModal from "../components/SingleCharacterModal"
 import Api from "../utils/Api"
 
@@ -38,7 +39,7 @@ const ListOfCharacter = async (searchCharacter, Param) => {
     return element
 
   } else {
-    return Error;
+    return NotFound();
   }
 }
 

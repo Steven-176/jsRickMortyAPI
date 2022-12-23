@@ -101,15 +101,54 @@ table {
   }
 } */
 
-#app div {
+.characterCards {
   display: flex;
   flex-flow: row wrap;
   flex-wrap: wrap;
 }
 
-.characterCard {
-  margin: 15px;
+div .card {
+  background-color: turquoise;
+  color:aliceblue;
+  font-weight: bolder;
 }
 .characterCard h2 {
   width: 300px;
+}
+.characterLinks:hover {
+  font-size: 170%;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+#notFound {
+  display: flexbox;
+  flex-direction: column;
+  text-align: center;
+  padding: 150px 0px 0px 0px;
+}
+
+#notFound .number404 {
+  font-size: 300px;
+}
+
+#notFound .message404 {
+  font-size: 80px;
+}
+
+#notFound .number404, #notFound .message404 {
+  color: rgb(55, 188, 175);
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px yellow, 0 0 5px yellow, 0 0 5px yellow, 0 0 5px rgba(255, 255, 0, 0.726), 0 0 5px yellow, 0 0 5px yellow, 0 0 5px yellow;
+  }
+  to {
+    text-shadow: 0 0 10px yellow, 0 0 10px yellow, 0 0 10px yellow, 0 0 10px yellow, 0 10px rgba(255, 255, 0, 0.726), 0 0 10px yellow, 0 0 10px yellow;
+  }
 }

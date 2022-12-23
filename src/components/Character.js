@@ -2,39 +2,35 @@ import createElement from "../utils/createElement";
 
 const Character = ({ textName = 'Not Found', src,  characterId = 'NotFound', characterDetails = 'Not Found', tagName = 'div' } = {}) => createElement(
   {
-    tagName,
-    classList: ['characterCard'],
+    tagName: 'div',
+    classList: ['card'],
+    attributes: {
+      style: 'width: 18rem;margin:50px;'
+    },
     children: [
       {
-        tagName: 'table',
+        tagName: 'img',
+        classList: ['card-img-top'],
+        attributes: {
+          src: src || 'https://via.placeholder.com/150',
+          alt: 'Image représentant le personnage'
+        }
+      },
+      {
+        tagName: 'div',
+        classList: ['card-body'],
         children: [
           {
-            tagName: 'tr',
-            children: [
-              {
-                tagName: 'h2',
-                classList: ['characterLinks'],
-                text: textName,
-                attributes: {
-                  id: characterId,
-                },
-              }
-            ]
-          },
-          {
-            tagName: 'tr',
-            children: [
-              {
-                tagName: 'img',
-                attributes: {
-                  src: src || 'https://via.placeholder.com/150'
-                }
-              }
-            ]
-            
+            tagName: 'h5',
+            classList: ['characterLinks'],
+            text: textName,
+            attributes: {
+              id: characterId
+            }
           }
         ]
-      },
+        
+      }
     ]
   }
 )
