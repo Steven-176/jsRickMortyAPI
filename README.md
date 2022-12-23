@@ -5,24 +5,32 @@
     - Steven Sivakaran
     - Walid Chiakh
 
+## Le projet
 
-L'application crée est une SPA (Single Page Application), permettant de récupérer et d'afficher à partir d'une API, une page lista,t des personnages. 
+L'application créée est une SPA (Single Page Application), permettant de récupérer et d'afficher à partir d'une API, une page listant des personnages. 
 
 
-Lien API:
-https://rickandmortyapi.com
 
-Lien Vercel:
+Lien API: https://rickandmortyapi.com
 
-# Installation 
+Lien Vercel: https://js-rick-morty-api.vercel.app/
 
-### Clone 
+## Installation 
 
-git clone https://github.com/Steven-176/jsRickMortyAPI
+### 1) Installation de pnpm
+- Télécharger pnpm et node
+    - pnpm :
+        $ iwr https://get.pnpm.io/install.ps1 -useb | iex
+    - node :
+        - https://nodejs.org/en/download/
 
-cd jsRickMortyAPI
+#### 2) Cloner le projet 
 
-### Install Depencies
+$ git clone https://github.com/Steven-176/jsRickMortyAPI
+
+$ cd jsRickMortyAPI
+
+#### 3) Installer les dépendances
 
 pnpm install 
 
