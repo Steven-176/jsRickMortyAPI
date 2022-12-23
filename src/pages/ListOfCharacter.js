@@ -7,7 +7,6 @@ const ListOfCharacter = async (searchCharacter, Param) => {
   }
   const res = await getCharacterFromApi(searchCharacter)
 
-
   if (res) {
     const data = res.map((element) => ({
       textName: `${element.name}`,
@@ -19,8 +18,6 @@ const ListOfCharacter = async (searchCharacter, Param) => {
   } else {
     return Error;
   }
-  
-  
 }
 
 export default ListOfCharacter

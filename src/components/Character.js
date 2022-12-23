@@ -36,3 +36,12 @@ const Character = ({ textName = 'Denis', src, tagName = 'div' } = {}) => createE
 )
 
 export default Character
+
+{
+  tagName: 'p'
+  text: 'ddef'
+  classList: ''
+  attributes: {
+    required: ''
+  }
+}
