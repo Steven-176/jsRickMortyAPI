@@ -27,16 +27,24 @@ Lien Vercel: https://js-rick-morty-api.vercel.app/
         - https://nodejs.org/en/download/
 
 #### 2) Cloner le projet 
+Cloner ce projet en faisant :
+```sh
+git clone https://github.com/Steven-176/jsRickMortyAPI
+```
 
-    ```sh
-    git clone https://github.com/Steven-176/jsRickMortyAPI
-    ```
-$ cd jsRickMortyAPI
+Se déplacer dans le nouveau dossier :
+```sh
+cd jsRickMortyAPI
+```
 
-#### 3) Installer les dépendances
+#### 3) Installation des dépendances
 
+```sh
 pnpm install 
+```
+### Lancer le serveur 
 
-### Run Server: 
-
+Pour que le site soit fonctionnelle, il suffit de taper cette commande afin de lancer le serveur
+```sh
 pnpm dev
+```
