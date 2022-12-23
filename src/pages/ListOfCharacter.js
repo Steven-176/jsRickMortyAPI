@@ -7,13 +7,14 @@ const ListOfCharacter = async (searchCharacter, Param) => {
   }
   const res = await getCharacterFromApi(searchCharacter)
 
-
   if (res) {
     const data = res.map((element) => ({
       textName: `${element.name}`,
-      src: element.image
+      src: element.image,
+      characterId: `character${element.id}`
     }))
 
+    // console.log(data)
     return ListCharacter(data)
 
   } else {
