@@ -1,6 +1,6 @@
 import ListCharacter from "../components/ListCharacter"
 import NotFound from "../components/NotFound"
-import SingleCharacterModal from "../components/SingleCharacterModal"
+import SingleCharacter from "../components/SingleCharacter"
 import Api from "../utils/Api"
 
 const ListOfCharacter = async (searchCharacter, Param) => {
@@ -23,7 +23,7 @@ const ListOfCharacter = async (searchCharacter, Param) => {
     const element = ListCharacter(data)
 
     /**
-     * Single Character modal display
+     * Single Character
      */
    
     const allCharacterCard = element.querySelectorAll('.characterLinks')
@@ -35,7 +35,7 @@ const ListOfCharacter = async (searchCharacter, Param) => {
         const app = document.querySelector('#app')
         app.innerHTML = ''
         const singleRes = await rmApi.getApi(e.target.id.slice(9))
-        app.appendChild(SingleCharacterModal(singleRes))
+        app.appendChild(SingleCharacter(singleRes))
       })
     })
 
