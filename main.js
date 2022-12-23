@@ -16,6 +16,7 @@ const tabManager = new TabManager(rootElement, {
 document.querySelectorAll('[data-tabId]').forEach(element => {
 
   element.addEventListener('click', () => {
+    document.querySelector('.form-inline').setAttribute('style', 'display:inline-block');
     tabManager.openTabById(element.getAttribute('data-tabId'))
   })
 

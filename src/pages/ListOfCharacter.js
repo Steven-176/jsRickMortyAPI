@@ -29,6 +29,9 @@ const ListOfCharacter = async (searchCharacter, Param) => {
     const allCharacterCard = element.querySelectorAll('.characterLinks')
     allCharacterCard.forEach((characterCard) => {
       characterCard.addEventListener('click', async function(e) {
+
+        document.querySelector('.form-inline').setAttribute('style', 'display:none');
+
         const app = document.querySelector('#app')
         app.innerHTML = ''
         const singleRes = await rmApi.getApi(e.target.id.slice(9))
