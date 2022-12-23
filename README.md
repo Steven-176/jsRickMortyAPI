@@ -20,14 +20,17 @@ Lien Vercel: https://js-rick-morty-api.vercel.app/
 ### 1) Installation de pnpm
 - Télécharger pnpm et node
     - pnpm :
-        $ iwr https://get.pnpm.io/install.ps1 -useb | iex
+        ```sh
+         iwr https://get.pnpm.io/install.ps1 -useb | iex
+        ```
     - node :
         - https://nodejs.org/en/download/
 
 #### 2) Cloner le projet 
 
-$ git clone https://github.com/Steven-176/jsRickMortyAPI
-
+    ```sh
+    git clone https://github.com/Steven-176/jsRickMortyAPI
+    ```
 $ cd jsRickMortyAPI
 
 #### 3) Installer les dépendances
