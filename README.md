@@ -1,10 +1,9 @@
 # jsRickMortyAPI
 
-Denis Kirat
-
-Steven Sivakaran
-
-Walid Chiakh
+- Groupe composé de :
+    - Denis Kirat
+    - Steven Sivakaran
+    - Walid Chiakh
 
 
 L'application crée est une SPA (Single Page Application), permettant de récupérer et d'afficher à partir d'une API, une page lista,t des personnages. 
