@@ -20,8 +20,6 @@ const ListOfCharacter = async (searchCharacter, Param) => {
   } else {
     return Error;
   }
-  
-  
 }
 
 export default ListOfCharacter

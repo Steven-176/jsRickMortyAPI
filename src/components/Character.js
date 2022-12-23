@@ -45,3 +45,12 @@ const Character = ({ textName = 'Denis', src,  characterId = '', characterDetail
 )
 
 export default Character
+
+{
+  tagName: 'p'
+  text: 'ddef'
+  classList: ''
+  attributes: {
+    required: ''
+  }
+}
