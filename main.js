@@ -12,7 +12,6 @@ const tabManager = new TabManager(rootElement, {
   }
 })
 
-
 document.querySelectorAll('[data-tabId]').forEach(element => {
 
   element.addEventListener('click', () => {
